@@ -14,18 +14,18 @@ x0 = [0.0, 0.0]
 a11 = 1
 a12 = -1
 a22 = 2
-b1 = 4
-b2 = 8
+b1 = 6
+b2 = 12
 
 nlines = 7
 
 ymin = -18
 ymax = 0
 
-xmin = -4
+xmin = -5.5
 xmax = 0.5
 
-step = 0.00005
+step = 0.001
 
 def f(x):
     return a11*x[0]*x[0] + a12*x[0]*x[1] + a22*x[1]*x[1] + b1*x[0] + b2*x[1]
@@ -48,8 +48,8 @@ def gen_lines(x1_l, x2_l):
 
 def main():
     # solution:
-    x1_k = [-24/7]
-    x2_k = [-20/7]
+    x1_k = [-36/7]
+    x2_k = [-30/7]
 
     x1_p = [i[0] for i in x_pocoord]
     x2_p = [i[1] for i in x_pocoord]
@@ -80,7 +80,7 @@ def main():
     plt.plot(x1_l, x2_l, ',', color = 'black')
     plt.xlabel('x')
     plt.ylabel('y')
-    plt.xlim(-3.5, 0.2)
+    plt.xlim(-5.5, 0.2)
     plt.title("Графическое отображение методов")
 
 
